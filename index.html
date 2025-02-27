@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteo</title>
+    <!-- CSS File -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+
+     <!-- Links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+    
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             container:{
+                center: true,
+             },
+             colors:{
+                primary: '#996830',
+                primary300: '#C4A386',
+                hvr: '#795123',
+                neutral: '#2C2C2C',
+                neutral700: '#444444',
+                pclrwhite: '#D9D9D6'
+            },          
+           }
+          }
+        }
+    </script>
+</head>
+<body>
+    <!-- HEADER/NAVBAR -->
+    <header class="container px-2 md:px-1 flex items-center justify-between h-[100px]">
+        <!-- logo -->
+         <div>
+            <img src="./assets/img/INTeo.png" class="max-w-[100px]" alt="logo">
+         </div>
+         <!-- nav links -->
+          <ul class="flex items-center gap-[40px] hidden md:flex
+           uppercase font-medium text-neutral700" >
+            <li class="hover:text-primary/80"><a href="#about">About</a></li>
+            <li class="hover:text-primary/80"><a href="#services">Services</a></li>
+            <li class="hover:text-primary/80"><a href="#work">Ourwork</a></li>
+             <!-- button -->
+             <div><a href="#contact">
+                <button class="button w-[138px] h-[44px] text-white
+                  bg-primary hover:bg-hvr flex  justify-center items-center"
+                >Contact <span class="text-[25px] rotate-45"><i class='bx bx-up-arrow-alt'></i></span>
+                </button>
+                  </a>
+            </div>
+          </ul>
+          <!-- mob nav links-->
+          <ul id="navLinks" class="flex flex-col absolute top-[-100%] left-0 right-0' mx-auto md:hidden
+            w-full h-[60vh] items-center justify-center gap-[40px] bg-neutral z-10
+            uppercase font-medium text-[white]" >
+             <li class="hover:text-primary/80"><a href="#about">About</a></li>
+             <li class="hover:text-primary/80"><a href="#services">Services</a></li>
+             <li class="hover:text-primary/80"><a href="#work">Ourwork</a></li>
+             <!-- Close Icon -->
+             <span class="absolute top-4 right-5 text-[35px] cursor-pointer" id="closeIcon">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- button -->
+            <div>
+              <a href="#contact">
+                <button class="button w-[138px] h-[44px] text-white cursor-pointer
+                  bg-primary hover:bg-hvr flex  justify-center items-center"
+                >Contact <span class="text-[25px] rotate-45"><i class='bx bx-up-arrow-alt'></i></span>
+                </button>
+              </a>
+            </div>
+         </ul>  
+          <!-- menu icon -->
+          <div class="flex md:hidden" id="menuIcon">
+            <span class="text-[45px] cursor-pointer">
+                <i class='bx bx-menu-alt-right'></i>
+            </span>
+          </div>
+      </header>
+        <!-- HERO SECTION -->
+    <div class="px-2 md:px-0 text-center">
+        <h1 class="xl:text-7xl md:text-6xl text-5xl mt-10 font-serif font-medium">Make <i>your home</i> an ode to joy</h1>
+        <p class="xl:text-[20px] md:text-[18px] md:w-[800px] w-full mx-auto
+         text-[16px] text-neutral700 my-8">
+         We turn your empty house to a lovely home, making the compact spaces  with sapce saving furnitures. Making the unique tastes of yours into reality! </p>
+    </div>
+    <!-- hero img -->
+     <div class="w-full h-[640px] mt-[100px] relative ">
+        <img src="./assets/img/hero-image.png" class="object-cover object-center w-full h-full" alt="">
+        <div hidden class="xl:flex "><a href="#contact"><img src="./assets/img/get-in-touch.png" 
+          class="absolute top-[-80px] left-[70px] w-[130px] cursor-pointer getInTouch duration-300" alt="get in touch "></a>
+        </div>
+        <div class="xl:hidden ">
+          <a href="#contact">
+          <img src="./assets/img/get-in-touch.png" class=" getInTouch w-[130px] mx-auto absolute 
+          top-[-80px] right-0  left-0" alt="get in touch"></a>
+        </div>
+     </div>
+     <!-- AWARDS SECTION -->
+      <div class="w-full h-full xl:h-[128px] max-h-[100%]
+       min-h-[100%] bg-neutral flex items-center justify-center px-2 xl:px-10 py-10 md:py-0 ">
+        <div class="flex md:items-center items-start gap-10">
+        <div class="flex items-center pt-5 md:pt-0">
+          <h4 class="text-2xl md:text-3xl rotate-90 text-primary300 font-light"><i>Awards</i></h4>
+          <div class="w-[35px] md:w-[64px] h-[1px] bg-primary300/50 md:bg-primary300/80 "></div>
+        </div>
+          <!-- awards list -->
+           <div class="grid gap-4 md:gap-8 xl:gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+           <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award1.png" alt="1">
+              <div class="flex flex-col">
+                <p class="font-[400]">Gold A’ Design Award</p>
+                <p class="font-[400]">2021</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award2.png" alt="2">
+              <div class="flex flex-col">
+                <p class="font-[400]">German Design Award</p>
+                <p class="font-[400]">2021</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award3.png" alt="3">
+              <div class="flex flex-col">
+                <p class="font-[400]">Good Design Award</p>
+                <p class="font-[400]">2019</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-4 text-pclrwhite">
+              <img src="./assets/img/award4.png" alt="4">
+              <div class="flex flex-col">
+                <p class="font-[400]">IF Design Award</p>
+                <p class="font-[400]">2020</p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT SECTION -->
+       <div id="about" class="grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-[50px]
+       place-items-center container mx-auto py-[100px] ">
+        <!-- Title About -->
+         <div class="px-2">
+          <div class="flex items-center gap-3">
+            <div class="w-[80px] h-[1px] bg-primary300"></div> 
+            <h4 class="font-[500] text-primary">ABOUT US</h4>
+         </div>
+         <h1 class="text-3xl md:text-5xl  mt-5 font-[500] font-serif text-neutral">
+            We help to bring <i>your dream home</i>to reality
+         </h1>
+         <p class="text-[18px] xl:text-[20px] text-neutral700 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+         <p class="text-[18px] xl:text-[20px] text-neutral700 my-5s">Tempor dolor elementum tellus non ipsum faucibus. Justo, magna mauris posuere auctor justo. Habitant proin aliquet volutpat leo ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc. Faucibus sit odio bibendum lobortis diam.</p>
+         </div>
+        <!-- About Img -->
+        <div class="flex gap-4 md:px-0 px-2 mt-5">
+          <!-- First Image -->
+          <div class="w-full sm:w-1/2">
+            <img src="./assets/img/about1.png" class="w-full object-contain">
+          </div>
+          <!-- Second Image -->
+          <div class="w-full sm:w-1/2 relative top-10 relative">
+            <img src="./assets/img/Badge.png" class="absolute top-[-100px] left-[-60px]">
+            <img src="./assets/img/about2.png" class="w-full object-contain">
+          </div>
+      </div>
+      </div>
+      <!-- Clients Count -->
+      <div class="container grid grid-cols-1 xl:grid-cols-3 xl:place-items-center place-items-start
+        xl:gap-0 gap-[50px] my-5 xl:my-[100px] px-2" id="clients-count">
+    <div class="flex gap-2 items-center">
+        <h1 class="counter text-5xl md:text-6xl font-serif font-[500]" data-count="80-100">0</h1>
+        <h4 class="text-[16px] md:text-[20px] font-serif font-[500]">SATISFITATION <br>CLIENTS</h4>
+    </div>
+    <div class="flex gap-2 items-center">
+        <h1 class="counter text-5xl md:text-6xl font-serif font-[500]" data-count="2030-250">0</h1>
+        <h4 class="text-[16px] md:text-[20px] font-serif font-[500]">EMPLOYEES ON <br>WORLDWIDE</h4>
+    </div>
+    <div class="flex gap-2 items-center">
+        <h1 class="counter text-5xl md:text-6xl font-serif font-[500]" data-count="3439-3469">0</h1>
+        <h4 class="text-[16px] md:text-[20px] font-serif font-[500]">PROJECTS COMPLETED <br>ON 60 COUNTRIES</h4>
+    </div>
+</div>
+<!-- SERVICES SECTION -->
+  <div class="container px-2 mt-[100px]" id="services">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-[80px] h-[1px] bg-primary300"></div> 
+        <h4 class="font-[500] text-primary">OUR SERVICES</h4>
+      </div>
+      <h1 class="text-3xl md:text-5xl mt-5 w-full md:w-[650px]
+       font-[500] font-serif overflow-hidden text-neutral">
+       We provide the <i>best solutions</i> <br>
+       for your dream home</h1>
+      </div>
+      <!-- services -->
+       <div class="flex md:justify-center gap-5 overflow-x-auto my-20">
+          <!-- services 1 -->
+           <div class="flex flex-col w-full min-w-[384px] max-w-[384px] max-h-[416px] border border-primary/50 p-4">
+            <div>
+              <img src="./assets/img/Service Icon.png" class="my-4" alt="services01">
+            </div>
+            <div>
+              <h4 class="text-2xl md:text-3xl">Architectural <br> & Interior design</h4>
+              <p class="my-8">Non diam pretium tristique augue placerat dolor.
+                 Accumsan nibh nunc, molestie volutpat ipsum, ultricies.z</p>
+            </div>
+              
+           </div>
+          <!-- services 1 -->
+           <div class="flex flex-col  w-full min-w-[384px] max-w-[384px] max-h-[416px] border border-primary/50 p-4">
+            <div>
+              <img src="./assets/img/Service Icon-1.png" class="my-4" alt="services01">
+            </div>
+            <div>
+              <h4 class="text-2xl md:text-3xl">Building <br> & Renovation</h4>
+              <p class="my-8">Non diam pretium tristique augue placerat dolor.
+                 Accumsan nibh nunc, molestie volutpat ipsum, ultricies.z</p>
+            </div>
+              
+           </div>
+          <!-- services 1 -->
+           <div class="flex flex-col  w-full min-w-[384px] max-w-[384px] max-h-[416px] border border-primary/50 p-4">
+            <div>
+              <img src="./assets/img/Service Icon-2.png" class="my-4" alt="services03">
+            </div>
+            <div>
+              <h4 class="text-2xl md:text-3xl">Renovation <br> & Management</h4>
+              <p class="my-8">Non diam pretium tristique augue placerat dolor.
+                 Accumsan nibh nunc, molestie volutpat ipsum, ultricies.z</p>
+            </div>
+              
+           </div>
+       </div>
+    </div>
+    <!--RECENT WORKS SECTION -->
+    <div id="work" class="container px-2 grid grid-cols-1 border-b p-10
+     xl:grid-cols-2 place-items-center overflow-hidden">
+      <div>
+        <!-- Title Recent -->
+        <div >
+          <div class="flex items-center gap-3">
+            <div class="w-[80px] h-[1px] bg-primary300"></div> 
+            <h4 class="font-[500] text-primary">OUR SERVICES</h4>
+          </div>
+          <h1 class="text-3xl md:text-5xl mt-5 w-full md:w-[650px]
+           font-[500] font-serif overflow-hidden text-neutral">
+           Some of <i>our crafts</i> <br>
+           made with love</h1>
+        </div>
+        <div class="my-[60px]">
+          <img src="./assets/img/works.png" class="w-full xl:w-[592px]">
+          <div class="my-2">
+            <h4 class="text-2xl md:text-3xl font-medium text-neutral my-2">Villa Furnishing & Interior</h4>
+            <p class="text-[16px] md:text-[18px] text-neutral700 w-full xl:w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+          </div>
+
+          <div class="my-0 xl:my-20">
+            <button class="button w-[158px] h-[44px] text-white cursor-pointer font-[500]
+              bg-primary hover:bg-hvr flex justify-center items-center hidden xl:flex"
+            >Contact <span class="text-[25px] rotate-45 flex"><i class='bx bx-up-arrow-alt'></i></span>
+            </button>
+        </div>
+        </div>
+      </div>
+      <!-- cols 2 -->
+       <div class="flex flex-col">
+        <div class="my-0 xl:my-[30px]">
+          <img src="./assets/img/works2.png" class="w-full xl:w-[480px]">
+          <div class="my-2">
+            <h4 class="text-2xl md:text-3xl font-medium text-neutral my-2">Luxury Hotel Renovations</h4>
+            <p class="text-[16px] md:text-[18px] text-neutral700 w-full xl:w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               Faucibus fringilla dui amet br faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+          </div>
+       </div>
+        <div class="my-[30px]">
+          <img src="./assets/img/works3.png" class="w-full xl:w-[480px]">
+          <div class="my-2">
+            <h4 class="text-2xl md:text-3xl font-medium text-neutral my-2">Luxury Hotel Renovation</h4>
+            <p class="text-[16px] md:text-[18px] text-neutral700 w-full xl:w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+          </div>
+       </div>
+       <div class="my-30">
+        <button class="button w-[158px] h-[44px] text-white cursor-pointer font-[500]
+          bg-primary hover:bg-hvr flex justify-center items-center flex xl:hidden">
+          Contact <span class="text-[25px] rotate-45 flex"><i class='bx bx-up-arrow-alt'></i></span>
+        </button>
+      </div>
+    </div>
+    </div>
+    <!-- CONTACT SECTION -->
+     <div class="container grid grid-cols-1 border-b pb-10 px-2
+      md:grid-cols-2 my-10 place-items-start md:place-items-center text-neutral">
+        <div>
+            <h1 class="text-3xl md:text-4xl w-full md:w-[400px]">Kick-start your dream home with us</h1>
+            <br><p class="text-[20px] md:text-[30px]  ">Send us a hi</p>
+            <div class="ml-[1px] w-[109px] md:w-[160px] h-[1px] bg-primary"></div>
+        </div>
+        <div>
+            <h1 class="text-[25px] mt-5 md:mt-0">Brooklyn, New York</h1>
+            <p class="my-5">962 Fifth Avenue Str, 3rd Floor-Trump <br>
+               Building NY 10006, United State.</p>
+            
+            <p class="">Email us at</p>
+            <h1 class="text-[20px] md:text-2xl text-primary">hello@stamariaecho@gmail.com</h1>
+
+            <p class="mt-5">If you're hurry, quick call for us</p>
+            <h1 class="text-[20px] md:text-2xl text-primary">09074015774</h1>
+
+        </div>
+     </div>
+     <!-- FOOTER SECTION -->
+      <div id="contact" class="container flex flex-col-reverse md:flex-row mb-10
+      items-center justify-center md:justify-between  gap-3 h-[100px] px-2 ">
+        <p class="text-neutral">© 2025 Inteo - Award winning studio. Made with love by echo</p>
+
+        <div class="flex items-center gap-5 text-neutral overflow-hidden ">
+          <h1 class="text-[20px font-[500] hidden sm:flex" >CONNECT</h1>
+          <div class="h-[1px] w-[50px] bg-primary hidden sm:flex"></div>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/ig.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/fb.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/yt.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          <span class="size-[40px] border rounded-full grid place-items-center">
+            <img src="./assets/img/twitter.png" class="w-[20px] hover:scale-110 duration-300 cursor-pointer" alt="fb"></span>
+          </div>
+      </div>
+
+
+
+    
+   <script src="./assets/js/app.js"></script>
+</body>
+</html>
